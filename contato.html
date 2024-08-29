@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="imgs/icon.jpg">
+    <link rel="stylesheet" href="css/style4.css"> <!--link para arquivo que contém os códigos css de estilo-->
+    <title>Portifólio Pessoal</title> <!--Titulo da aba da página-->
+  
+</head>
+<body>
+
+    <header> <!--contém cabeçalho-->
+        <nav id="menu"> <!--contém o menu (links para outras páginas)-->
+            <ul >
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="formacao.html">Formação Acadêmica</a></li>
+                <li><a href="portifolio.html">Portifólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main><!--contém conteúdo principal do site-->
+        <section class="sectionUm"> <!--agrupando o "cardUm" que contém  os "subcards" 'titulo' e 'contato'-->
+
+          <div class="cardUm">
+
+            <div class="titulo">
+              <h1>Entre em contato:</h1>
+            </div>
+
+            <div class="contato">
+
+              <form> <!--inicia formulário-->
+                
+                  <div class="campo">
+                    <label for="nome">Nome:</label> <!-- define nome/legenda para o campo input-->
+                    <input type="text" name="nome" id="nome" size="40px">
+                  </div>
+                  <div class="campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" id="tel" size="40px">
+                  </div>
+                  <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" size=" 40px">
+                
+                  </div>
+                  <div class="campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="mensagem" id="msg" cols="42" rows="7"></textarea>
+                  </div>
+                
+
+                <button disabled="disabled">Enviar</button> <!--botão desativado-->
+              </form>
+              </p>
+            
+          </div>
+
+        </section>
+      </main>
+
+      <aside><!--conteúdo relacionado ao principal, nesse caso imagens-->
+        <div class="imagem">
+        <img src="imgs/telefone.webp" alt="Telefone icon">
+        <img src="imgs/email.webp" alt="E-mail icon">
+        <img src="imgs/msg.webp" alt="Mensagem icon">
+        </div>
+      </aside>
+
+        <footer> <!--'rodapé'-->
+          <p>Desenvolvido para fins acadêmicos</p>
+        </footer>
+
+</body>
+</html>

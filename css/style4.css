@@ -1,0 +1,145 @@
+/* 'estilos' que se aplicam a todos os elementos da página*/
+*{
+    box-sizing: border-box;
+    margin: 0; /* retirando margem padrão*/
+    padding: 0; /*retirando preenchimento padrão*/
+  }  
+
+  body{
+    display: flex;
+    margin: 5px;
+    flex-wrap: wrap; /*permite quebra de linha quando a largura definida não couber na tela*/
+    flex: 1 1 100vw; /*definindo flex-grow, flex-shrink e flex-basis*/
+    background-color: rgb(1, 42, 79);
+  }
+  
+  main,header, nav, aside, footer{
+    display: flex;
+  }
+
+  header{
+    flex: 1 1 100vw;
+  }
+
+  nav{
+    margin: 5px;
+    flex: 1 1 100vw;
+    height: 100px; /*definindo altura fixa para elemento*/
+    background-color: rgb(28, 46, 116);
+    align-items: center; /*dispor links no centro (vertical )*/
+    justify-content: center; /*dispor links no centro (horizontal*)*/
+  }
+  
+  #menu ul{
+    list-style-type: none; /*tira "bolinhas" dos itens da lista*/
+    padding: 0; 
+    background-color: rgb(28, 46, 116);
+    text-align: center; /*centralizar texto*/
+}
+
+#menu ul li{
+    display: inline; /* coloca elementos lado a lado em uma linha só*/
+}
+
+#menu ul li a{
+    display: inline-block;
+    color: rgb(4, 218, 247);
+    text-decoration: none; /* retira sublinhado padrão de links*/
+    padding:12px;
+    background-color: rgb(28, 46, 116);
+    font-size: 19px; /*tamanho da fonte*/
+    
+}
+
+#menu ul li a:hover{
+    background-color: rgb(111, 215, 253);
+    color: black;
+    border-radius: 400px; /* "curvatura" da borda */
+}
+  
+  main{
+    flex: 20 1 500px; /*flex-grow aumentará 20x mais que os outros; flex-basis com tamanho inicial de 500px*/
+  }
+
+  footer{
+    padding: 25px;
+    margin: 50px 0px 0px 0px;
+    flex: 1 1 100vw;
+    height: 100px;
+    background-color: rgb(28, 46, 116);
+    color: rgb(111, 215, 253);
+    text-align: justify;
+  }
+
+  footer p{
+    margin: 15px 0px 0px 0px;
+  }
+
+  .sectionUm{
+    width: 100%;
+    margin: 15px 5px;
+    background-color: rgb(1, 42, 79);
+  }
+ 
+
+  .cardUm{
+    color: #fafbfc;
+    margin: 2px;
+    border: 5px dashed  rgb(111, 215, 253);
+    border-radius: 10px;
+  }
+
+  .titulo{
+    color: #fafbfc; /*cor do texto*/
+    margin: 15px;
+    padding: 10px;
+    border: 2px solid  rgb(111, 215, 253);
+    border-radius: 10px;
+  }
+  
+ .contato{
+    margin: 13px;
+    padding: 10px;
+    border: 2px solid rgb(111, 215, 253);
+    border-radius: 10px;
+ }
+
+ /*'estilos' aplicados no <input>, <textarea> e <button>*/
+ input, textarea, button {
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.campo{
+    margin-bottom: 1px; /*margem de baixo*/
+}
+.campo label {
+    margin-bottom: 20px;
+    display: block; /*dispõe elementos em bloco*/
+}
+.campo input, textarea{
+    box-shadow: 2px 2px 2px rgba(244, 220, 220, 0.471); /*coloca sombra em determinado campo, nesse caso nos inputs e na textarea*/
+}
+
+/*definindo 'estilos' do botão*/
+button{
+    margin: 18px 3px; 
+    width: 100px; /*largura*/
+    color:rgb(28, 46, 116);
+    background-color: rgb(145, 205, 246); /*cor de fundo*/
+}
+
+aside{
+    display: flex; /*exibição flexível*/
+    margin: 5px;
+    flex: 1 1 200px;
+    height: 600px; /*define tamanho fixo do aside*/
+}
+
+/*propriedades atribuídas as imagens*/
+.imagem img{
+    display: block; /*exibição em bloco*/
+    width: 130px;
+    margin: 6px 20px;
+    padding: 5px;
+}

@@ -1,0 +1,146 @@
+ /* 'estilos' que se aplicam a todos os elementos da página*/
+*{
+    box-sizing: border-box; /* faz o valor total ser considerado até a borda, somando preenchimento e valor da borda*/
+    margin: 0; /* retirando margem padrão*/
+    padding: 0; /*retirando preenchimento padrão*/
+}  
+
+body{
+    display: flex; /*transforam body em flex-container*/
+    margin: 5px; /*define margem dos elementos contidos em body*/
+    flex-wrap: wrap; /*permite quebra de linha quando a largura definida não couber na tela*/
+    flex: 1 1 100vw; /*definindo flex-grow, flex-shrink e flex-basis*/
+    background-color: rgb(1, 42, 79);
+}
+
+header{
+    display: flex;
+    flex: 1 1 100vw;  /*definindo flex-grow, flex-shrink e flex-basis*/
+}
+
+nav{
+    display: flex;
+    margin: 5px;
+    flex: 1 1 100vw;
+    height: 100px; /*definindo altura fixa para elemento*/
+    background-color: rgb(28, 46, 116); /*define cor de fundo do menu*/
+    align-items: center; /*dispor links no centro (vertical )*/
+    justify-content: center; /*dispor links no centro (horizontal*)*/
+}
+
+#menu ul{
+    list-style-type: none; /*tira "bolinhas" dos itens da lista*/
+    padding: 0; 
+    background-color: rgb(28, 46, 116);
+    text-align: center; /*centralizar texto*/
+}
+
+#menu ul li{
+    display: inline; /* coloca elementos lado a lado em uma linha só*/
+}
+
+#menu ul li a{
+    display: inline-block;
+    color: rgb(4, 218, 247);
+    text-decoration: none; /* retira sublinhado padrão de links*/
+    padding:12px;
+    background-color: rgb(28, 46, 116);
+    font-size: 19px; /*tamanho da fonte*/
+
+}
+
+#menu ul li a:hover{
+    background-color: rgb(111, 215, 253);
+    color: black; /*cor do texto ao passar cursor*/
+    border-radius: 400px; /* "curvatura" da borda */
+}
+
+main{
+    display: flex;
+    margin: 5px;
+    background-color: rgb(1, 42, 79);
+    flex: 20 1 500px; /*flex-grow aumentará 20x mais que os outros; flex-basis com tamanho inicial de 500px*/
+
+}
+/*definindo estilo do 'rodapé'*/
+footer{
+    padding: 25px;
+    margin: 50px 0px 0px 0px;
+    flex: 1 1 100vw;
+    height: 100px;
+    background-color: rgb(28, 46, 116);
+    color: rgb(111, 215, 253);
+    text-align: justify;
+}
+/*definindo estilo do elemento <p> contido no 'rodapé'*/
+footer p{
+    margin: 15px 0px 0px 0px;
+}
+
+.sectionUm{
+    margin: 20px;
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(1, 42, 79);
+    width: 100%; /*faz <section> ocupar 100% + margem da largura disponível*/
+}
+
+
+.cardUm{
+    color: #fafbfc;
+    margin: 3px;
+    padding: 10px;
+    border: 5px dashed  rgb(111, 215, 253);
+    border-radius: 10px;
+}
+
+.titulo{
+    color: #fafbfc;
+    margin: 15px;
+    padding: 10px;
+    border: 2px solid  rgb(111, 215, 253); /*definindo tamanho da borda, tipo e cor*/
+    border-radius: 10px;
+
+}
+
+/*definindo estilo das <div> 'trabs'*/
+.trabs{
+    font-size: 18px; 
+    margin: 15px;
+    padding: 10px;
+    border: 2px solid rgb(111, 215, 253);
+    border-radius: 10px;
+
+}
+
+/*definindo estilo das <p> contidas em <div>*/
+.trabs p{
+    color: #fafbfc;
+    padding: 5px; 
+}
+
+/*fazendo 'botões' que contém o link das páginas do portifólio*/
+.trabUl{
+    list-style-type: none; /*retira marcadores dos itens da lista*/
+    padding: 0;
+
+}
+.trabUl .trabLista{
+    text-align: center; /*alinhamento do texto ao centro*/
+    width: 120px; /*largura*/
+    margin: 10px; /*margem*/
+    padding: 5px; /*preenchimento*/
+    background-color: rgb(111, 215, 253); /*cor de fundo*/
+}
+
+.trabUl .trabLista a {
+    font-size: 15px;
+    font-weight: bold; /*define largura da fonte, nesse caso 'negrito'*/
+    text-decoration: none; /*tira sublinhado padrão do link*/
+    color: rgb(28, 46, 116); /*or do texto*/
+}
+
+.trabUl .trabLista a:hover{
+    font-size: 18px;
+    color: #fafbfc;
+}

@@ -1,0 +1,125 @@
+/*'estilos' aplicados em todos elementos da página*/
+*{
+    box-sizing: border-box; /* faz o valor total ser considerado até a borda, somando preenchimento e valor da borda*/
+    margin: 0; /* retirando margem padrão*/
+    padding: 0; /*retirando preenchimento padrão*/
+
+}  
+body{
+    display: flex; /*transforam body em flex-container*/
+    margin: 5px;
+    flex-wrap: wrap; /*permite quebra de linha quando a largura definida não couber na tela*/
+    flex: 1 1 100vw; /*definindo flex-grow, flex-shrink e flex-basis*/
+    background-color: rgb(1, 42, 79); /*cor de fundo da página*/
+}
+
+main, aside, footer{
+    display: flex;
+    margin: 5px; /*definindo margem para main, aside e footer*/
+}
+
+header{
+    display: flex;
+    flex: 1 1 100vw; /*definindo flex-grow, flex-shrink e flex-basis*/
+}
+
+nav{
+    display: flex;
+    margin: 5px;
+    flex: 1 1 100vw;
+    height: 100px; /*definindo altura fixa para elemento*/
+    background-color: rgb(28, 46, 116);
+    align-items: center; /*dispor links no centro (vertical )*/
+    justify-content: center; /*dispor links no centro (horizontal*)*/
+}
+
+#menu ul{
+    list-style-type: none; /*tira "bolinhas" dos itens da lista*/
+    padding: 0; /*retira preenchimento*/
+    background-color: rgb(28, 46, 116);
+    text-align: center; /*centralizar texto*/
+}
+
+#menu ul li{
+    display: inline; /* coloca elementos lado a lado em uma linha só*/
+}
+
+#menu ul li a{
+    display: inline-block; /*permite definir padding, largura e altura*/
+    color: rgb(4, 218, 247);
+    text-decoration: none; /* retira sublinhado padrão de links*/
+    padding:12px;
+    background-color: rgb(28, 46, 116);
+    font-size: 19px; /*tamanho da fonte*/
+
+}
+/*o que acontece quando passar o cursor do mouse nos menus*/
+    #menu ul li a:hover{
+    background-color: rgb(111, 215, 253);
+    color: black; /*cor do texto ao passar o cursor*/
+    border-radius: 500px; /* "curvatura" da borda */
+}
+
+main{
+    flex: 20 1 500px; /*flex-grow aumentará 20x mais que os outros; flex-basis com tamanho inicial de 500px*/
+
+}
+
+/*estilos aplicados no conteúdo separado (neste caso lateral) do conteúdo princial(main)*/
+aside{
+    flex: 1 1 200px;
+    padding: 5px;
+    margin: 20px; 
+    height: 200px; /*definindo altura do aside*/
+
+}
+/*definindo estilo do 'rodapé'*/
+footer{
+flex: 1 1 100vw;
+padding: 25px;
+margin: 50px 0px 0px 0px;
+height: 100px;
+background-color: rgb(28, 46, 116);
+color: rgb(111, 215, 253);
+text-align: justify; /*texto justificado*/
+
+}
+/*definindo estilo do elemento <p> contido no 'rodapé'*/
+footer p{
+margin: 15px 0px 0px 0px; 
+}
+
+.sectionUm{
+margin: 18px;
+}
+
+
+.cardUm{
+color:#fafbfc;
+margin: 2px;
+border: 4px dashed rgb(111, 215, 253);/*definindo tamanho da borda, tipo e cor*/
+border-radius: 10px;
+
+}
+
+.titulo{       
+margin: 15px;
+padding: 10px;
+border: 3px solid rgb(111, 215, 253);
+border-radius: 10px;
+text-align: left; /*texto alinhado à esquerada*/
+}
+
+.sobremim{
+text-align: justify;
+font-size: 18px;
+padding: 15px;
+margin: 25px;
+border: 3px solid rgb(111, 215, 253);
+border-radius: 15px;
+
+}
+
+.imagem img{
+width: 130px; /*largura da imagem*/
+}
