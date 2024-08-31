@@ -1,6 +1,5 @@
 /* 'estilos' que se aplicam a todos os elementos da página*/
 *{
-
     box-sizing: border-box; /* faz o valor total ser considerado até a borda, somando preenchimento e valor da borda*/
     margin: 0; /* retirando margem padrão*/
     padding: 0; /*retirando preenchimento padrão*/
@@ -60,7 +59,7 @@
 #menu ul li a:hover{
     background-color: rgb(111, 215, 253);
     color: black; /*cor do texto ao passar o cursor*/
-    border-radius: 500px; /* "curvatura" da borda */
+    border-radius: 400px; /* "curvatura" da borda */
 }
   
   main{
@@ -72,9 +71,9 @@
     display: inline; /*dispôe conteúdo em uma linha só*/
     justify-content: center; /*alinha conteúdo no centro*/
     flex: 1 1 200px;
-    padding: 10px;
-    margin: 15px;
-    height: 300px;
+    padding: 5px;
+    margin: 20px;
+    height: 600px;
     
   }
 
@@ -135,7 +134,9 @@
   
   /*definindo largura e margem das imagens*/
   .imgs img{
+    display: block; /*exibição em bloco*/
     width: 130px; 
-    margin: 5px;
+    margin: 6px 20px;
+    padding: 5px;
   }
   

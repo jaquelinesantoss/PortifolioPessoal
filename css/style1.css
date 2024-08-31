@@ -57,7 +57,7 @@ nav{
     #menu ul li a:hover{
     background-color: rgb(111, 215, 253);
     color: black; /*cor do texto ao passar o cursor*/
-    border-radius: 500px; /* "curvatura" da borda */
+    border-radius: 400px; /* "curvatura" da borda */
 }
 
 main{
@@ -70,56 +70,59 @@ aside{
     flex: 1 1 200px;
     padding: 5px;
     margin: 20px; 
-    height: 200px; /*definindo altura do aside*/
+    height: 600px; /*definindo altura do aside*/
 
 }
 /*definindo estilo do 'rodapé'*/
 footer{
-flex: 1 1 100vw;
-padding: 25px;
-margin: 50px 0px 0px 0px;
-height: 100px;
-background-color: rgb(28, 46, 116);
-color: rgb(111, 215, 253);
-text-align: justify; /*texto justificado*/
+    flex: 1 1 100vw;
+    padding: 25px;
+    margin: 50px 0px 0px 0px;
+    height: 100px;
+    background-color: rgb(28, 46, 116);
+    color: rgb(111, 215, 253);
+    text-align: justify; /*texto justificado*/
 
 }
 /*definindo estilo do elemento <p> contido no 'rodapé'*/
 footer p{
-margin: 15px 0px 0px 0px; 
+    margin: 15px 0px 0px 0px; 
 }
 
 .sectionUm{
-margin: 18px;
+    margin: 18px;
 }
 
 
 .cardUm{
-color:#fafbfc;
-margin: 2px;
-border: 4px dashed rgb(111, 215, 253);/*definindo tamanho da borda, tipo e cor*/
-border-radius: 10px;
+    color:#fafbfc;
+    margin: 2px;
+    border: 4px dashed rgb(111, 215, 253);/*definindo tamanho da borda, tipo e cor*/
+    border-radius: 10px;
 
 }
 
 .titulo{       
-margin: 15px;
-padding: 10px;
-border: 3px solid rgb(111, 215, 253);
-border-radius: 10px;
-text-align: left; /*texto alinhado à esquerada*/
+    margin: 15px;
+    padding: 10px;
+    border: 3px solid rgb(111, 215, 253);
+    border-radius: 10px;
+    text-align: left; /*texto alinhado à esquerada*/
 }
 
 .sobremim{
-text-align: justify;
-font-size: 18px;
-padding: 15px;
-margin: 25px;
-border: 3px solid rgb(111, 215, 253);
-border-radius: 15px;
+    text-align: justify;
+    font-size: 18px;
+    padding: 15px;
+    margin: 25px;
+    border: 3px solid rgb(111, 215, 253);
+    border-radius: 15px;
 
 }
 
 .imagem img{
-width: 130px; /*largura da imagem*/
+    display: block; /*exibição em bloco*/
+    width: 130px; /*largura da imagem*/
+    margin: 6px 20px;
+    padding: 5px;
 }
